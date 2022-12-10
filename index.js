@@ -8,6 +8,7 @@ const normalize = require('normalize-strings');
 const session = require('express-session')
 var util = require('util');
 const { ArtistsClient, Artist } = require('genius-lyrics');
+const port = '80'
 const hostname = 'lyrictype.com'
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
