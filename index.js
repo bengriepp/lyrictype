@@ -8,6 +8,7 @@ const normalize = require('normalize-strings');
 const session = require('express-session')
 var util = require('util');
 const { ArtistsClient, Artist } = require('genius-lyrics');
+const hostname = 'lyrictype.com'
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 const Client = new Genius.Client("WloXn-u-otTEPB95ePT-xtynWzpyZ73Uk0mqBsUXNO39GoLIkfJc01tphA3hk1k3")
@@ -151,7 +152,7 @@ function shuffleArray(array) {
     return array
 }
 
-app.listen(process.env.PORT || 3000, () => console.log(`App available on http://localhost:3000`))
+app.listen(port, hostname, () => console.log(`App available on http://${hostname}:${port}/`))
 
 
 
