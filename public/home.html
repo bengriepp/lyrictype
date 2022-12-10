@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <script src="textFit.js"></script>
+        <script src="script.js" async defer></script>
+    </head>
+    <body class="typing-clear result-clear">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <image class="logo" src="assets/logo.png"></image>
+        
+        <div class="grid" onclick="focusCurrInput()">
+            <form class="full-area artistTyping" id="artist-input">
+                <input type="text input" id="artistInput" autocomplete="off" spellcheck="false" placeholder="Type an artist"/>
+            </form>
+            <object class="full-area loading" id="loading" type="image/svg+xml" data="assets/loadinglogo.svg"></object>
+            <div class="container full-area typing" id="container" onclick="focusCurrInput()">
+                <div class="quote-display full-area" id="quoteDisplay"></div>
+            </div>
+        <div class="result result-hide full-area">
+            <div class="result-top">
+                <image class="album-art" id="album-art" src="blonde.png"></image>
+                <div class="song-info-container">
+                <div class="song-title" id="song-title">bruh <br></div>
+                <div class="song-info" id="song-info">
+                    bruh<br>
+                    bruh
+                </div>
+                </div>
+                <div class="typing-info">
+                    <p class="wpm" id="wpm">wpm: 89</p>
+                    <p class="acc" id="acc">acc: 94%</p>
+                </div>
+            </div>
+            <div class="result-bottom">
+                <button id="continue" class="result-button continue" onclick="nextSong()"><image class="button-image" src="assets/continue.svg"></image></button>
+                <button id="redo" class="result-button redo" onclick="redo()"><image class="button-image" src="assets/redo.svg"></image></button>
+                <button id="search" class="result-button search" onclick="search()"><image class="button-image" src="assets/search.svg"></image></button>
+            </div>
+        </div>
+        </div>
+        <input id="quoteInput" class="quote-input" autofocus onclick="focusCurrInput()"></input>
+    </body>
+</html>

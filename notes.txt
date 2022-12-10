@@ -1,0 +1,55 @@
+IDEA:
+
+Pro mode - words from the lyrics are missing and must
+be filled in from knowledge
+
+
+PROBLEM:
+server is setup to handle one connection at a time by storing the currently searched artist
+
+solutions:
+temporarily store
+
+
+
+TODO:
+[x] gui
+    [x] screen for typing in artist
+    [x] screen for results
+    [x] focus function that focuses either input based on state of document
+
+
+[x] next song autoloading
+[x] remove parantheses
+[~] replace untypable characters
+[x] move '&' checking to index by passing boolean through url
+[x] remember current artist, create routing function to fetch next page of songs of current artist
+[x] search button
+[x] tab index buttons
+[ ] check input against artist name
+
+[x] album cover changes before loading next song
+[x] font sizing
+[ ] responsive design
+[ ] second preload
+[ ] loading icon
+[ ] website name
+[x] make buttons unclickable when not loaded
+
+LOW PRIORITY:
+[ ] use verses of inputted artist first
+[ ] only allow spaces to be typed on spaces for formatting
+
+BUGS:
+
+[x] if searched artists top song is a feature, will show different artist
+[x] sometimes requires a space at the end for some reason lol
+[x] some songs just like dont work (mackelmore, mazzy star)
+[ ] can return genius articles if top result
+[x] timer doesn't wait for typing
+[x] array reference error when results less than 20
+[x] some songs dont contain brackets which stops songs from loading
+[x] unable to return songs that do not have 4 lines without brackets
+[x] when preload fails, loads next page and song even if page has remaining results
+[ ] unfocus quote type after done
+[x] if first song doesn't load, no songs load
