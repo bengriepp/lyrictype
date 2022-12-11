@@ -17,7 +17,7 @@ var jsonData
 var preloadJson
 let incorrectTotal = 0;
 
-const baseURL = 'http://lyrictype.com:8080/'
+const baseURL = 'http://lyrictype.com/'
 
 artistInputTabIndex();
 
